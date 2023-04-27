@@ -12,7 +12,7 @@ class InventoryFilter(admin.SimpleListFilter):
 
     def lookups(self, request, model_admin):
         return [
-            ('<10', 'Low')
+            ('<10', 'Low') 
         ]
 
     def queryset(self, request, queryset: QuerySet):
